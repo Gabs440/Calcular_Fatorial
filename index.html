@@ -1,0 +1,24 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculo Fatorial</title>
+    <script>
+        function fatorial(n) {
+        var total = 1;
+        for (var i = 2;i <= n;i++) {
+        total = total * i;
+        }
+        return total;
+        }
+        function testeFatorial() {
+        var num= prompt("Informe um número inteiro positivo: ");
+        var numInt = parseInt(num);//converte a string em inteiro
+        var fat = fatorial(numInt);
+        document.write('Resultado: ' + fat);
+        }
+    </script>
+</head>
+    <body>
+        <input type="button" onclick="testeFatorial()" value="Clique para calcular o fatorial!">
+    </body>
+</html>
